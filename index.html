@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Delta</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delta Search</title>
+  <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images.png">
+</head>
+<body class="body">
+    <div id="entrance">
+        <img src="images.png" alt="delta" style="width: 150px; 
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover; 
+            border: 2px solid #000; 
+        ">
+        <div class="loading">Loading...</div>
+    </div>
+    <div id="main-content">
+    </div>
+    <script src="display.js"></script>
+      <script>
+    const images = [
+      "image1.jpeg",
+      "image2.jpeg",
+      "image3.jpeg",
+      "image4.jpeg",
+    ];
+    
+    let index = 0;
+    
+    function changeBackground() {
+      document.body.style.backgroundImage = `url('${images[index]}')`;
+      index = (index + 1) % images.length; // Loops through the array
+    }
+
+    setInterval(changeBackground, 2000); // Changes image every 2 seconds
+    changeBackground(); // Set initial background
+  </script>
+  <div class="container">
+    <header>
+      <!-- Logo from an online source. Replace the link with any image you prefer -->
+      <img
+        src="images.png"
+        alt="Delta Logo"
+        class="logo"
+      />
+      <h1 class="tit">Discover the world with delta</h1>
+      <p>fast, secure and personalised search experience</p>
+    </header>
+    <div class="search-box">
+      <form id="search-form">
+        <input type="text" placeholder="Search..." id="search-input" />
+  <input type="image" src="search.png" alt="search" style="width: 30; height: 30; border-radius: 50%;" align="center" valign="middle">
+      </form>
+    </div>
+    <nav class="nav">
+  <ul class="build">
+    <li class="li"><a href="web.html" class="a">web</a></li>
+    <li class="li"><a href="images.html" class="a">images</a></li>
+    <li class="li"><a href="news.html" class="a">news</a></li>
+    <li class="li"><a href="maps.html" class="a">maps</a></li>
+  </ul>
+</nav>
+    <div id="results">
+      <!-- This section can later be used to display search results if you build your own backend -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+  
+  <footer class="footer">
+  <ul class="footer ul">
+    <li><a href="privacyterms.html" class="footer ul li a">privacy terms</a></li>
+    <li class="footer ul li"><a href="about.html" class="footer ul li a">About</a></li>
+    <li class="footer ul li"><a href="contact.html" class="footer ul li a">Contact</a></li>
+    <li class="footer ul li"><a href="help.html" class="footer ul li a">help</li>
+    <li class="footer ul li"><a href="feedback.html" class="footer ul li a">feedback</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>

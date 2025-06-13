@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.contact-links {
+    margin-top: 50px;
+}
+
+.contact-links a {
+    margin: 10px;
+    display: inline-block;
+}
+
+.contact-links img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.contact-links img:hover {
+    transform: scale(1.1);
+}

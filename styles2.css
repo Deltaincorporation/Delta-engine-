@@ -1,0 +1,36 @@
+body {
+    font-family: 'Merriweather', serif;
+    background: #F8E8D9;
+    color: #6B4226;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: #D14836;
+    color: white;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.privacy-content {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background: #FAF3E3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #B22222;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
